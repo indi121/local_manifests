@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+  <remote name="indi"
+          fetch="https://github.com/indi121" />
+
+  <!-- Sync trees -->
+        <project path="device/xiaomi/whyred" name="repo-location" remote="remote-name" revision="branch-name" />
+        <project path="vendor/xiaomi/whyred" name="  " remote="  " revision="  " />
+        <project path="kernel/xiaomi/whyred" name="  " remote="  " revision="  " />
+  
+</manifest>

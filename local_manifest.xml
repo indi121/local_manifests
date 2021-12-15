@@ -6,8 +6,17 @@
           fetch="https://github.com/indi121" />
 
   <!-- Sync trees -->
-        <project path="device/xiaomi/whyred" name="repo-location" remote="remote-name" revision="branch-name" />
-        <project path="vendor/xiaomi/whyred" name="  " remote="  " revision="  " />
-        <project path="kernel/xiaomi/whyred" name="  " remote="  " revision="  " />
+        <project path="device/xiaomi/vince" name="device_vince" remote="indi" revision="crdroid" />
+        <project path="kernel/xiaomi/vince" name="kernel_vince" remote="indi" revision="new" />
+        <project path="vendor/xiaomi/vince" name="vendor_vince" remote="indi" revision="eleven" />
   
+  <!-- Sync extras -->
+        <remove-project name="crdroidandroid/android_hardware_qcom_media" />
+        <remove-project name="crdroidandroid/android_hardware_qcom_audio" />
+        <remove-project name="crdroidandroid/android_hardware_qcom_display" />
+ 
+        <project path="hardware/qcom-caf/msm8996/display" name="msm8996_display" remote="indi" revision="eleven" />
+        <project path="hardware/qcom-caf/msm8996/media" name="msm8996_media" remote="indi" revision="eleven" />
+        <project path="hardware/qcom-caf/msm8996/audio" name="msm8996_audio" remote="indi" revision="eleven" />
+
 </manifest>

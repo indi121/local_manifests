@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <manifest>
 
-  <remote name="indi"
-          fetch="https://github.com/indi121" />
-
-  <!-- Sync trees -->
-        <project path="device/xiaomi/whyred" name="repo-location" remote="remote-name" revision="branch-name" />
-        <project path="vendor/xiaomi/whyred" name="  " remote="  " revision="  " />
-        <project path="kernel/xiaomi/whyred" name="  " remote="  " revision="  " />
+	<remote  name="indi"
+		fetch="https://github.com/indi121" />
   
+	<remote  name="Santy"
+		fetch="https://github.com/TheSanty" />
+	
+ 	<project path="device/xiaomi/whyred" name="device_whyred" remote="indi" revision="crdroid"/>
+	<project path="device/xiaomi/sdm660-common" name="device_common" remote="indi" revision="crdroid"/>
+	<project path="kernel/xiaomi/sdm660" name="kernel_sdm660" remote="indi" revision="lineage-18.1"/>
+	<project path="vendor/xiaomi" name="vendor_xiaomi" remote="Santy" revision="eleven"/>
+
 </manifest>

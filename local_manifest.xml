@@ -7,8 +7,11 @@
 	<remote  name="Santy"
 		fetch="https://github.com/TheSanty" />
 	
- 	<project path="device/xiaomi/whyred" name="device_whyred" remote="indi" revision="crdroid"/>
-	<project path="device/xiaomi/sdm660-common" name="device_common" remote="indi" revision="crdroid"/>
+	<remote  name="lineage"
+		fetch="https://github.com/LineageOS" />
+	
+ 	<project path="device/xiaomi/whyred" name="android_device_xiaomi_whyred" remote="lineage" revision="lineage-18.1"/>
+	<project path="device/xiaomi/sdm660-common" name="android_device_xiaomi_sdm660-common" remote="lineage" revision="lineage-18.1"/>
 	<project path="kernel/xiaomi/sdm660" name="kernel_sdm660" remote="indi" revision="lineage-18.1"/>
 	<project path="vendor/xiaomi" name="vendor_xiaomi" remote="Santy" revision="eleven"/>
 
